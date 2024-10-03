@@ -1,6 +1,8 @@
 body {
     /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Verdana', sans-serif;
+    margin: 0;
+
 }
 
 header {
@@ -8,12 +10,11 @@ header {
     background-size: cover;
     padding: 10px 20px;
     width: 100%;
-    min-height: 500px;
 }
 
 nav {
     background-image: url('images/logo.png');
-    background-size: 60px;
+    background-size: 70px;
     padding: 10px 20px;
     background-repeat: no-repeat;
 }
@@ -22,6 +23,7 @@ nav ul {
     display: flex;
     list-style: none;
     size: 24px;
+    font-weight: bold;
     list-style-type: none;
 }
 
@@ -54,12 +56,25 @@ nav ul li a {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+
+}
+
+.destinations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 20px;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.hidden-info {
+    display: none;
 }
 
 .card {
-    display: inline-block;
-    width: 300px;
-    margin: 15px;
-    /* Spacing between cards */
-    padding: 20px;
+    border: 1px solid red;
+    background-color: #f0f0f0;
 }
