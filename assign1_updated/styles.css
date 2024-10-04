@@ -2,7 +2,7 @@ body {
     /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Verdana', sans-serif;
     margin: 0;
-    background-color: rgb(189, 212, 207);
+    background-color: rgb(197, 200, 199);
 
 }
 
@@ -14,10 +14,11 @@ header {
     min-height: 425px;
 }
 
+
 nav {
     background-image: url('images/logo.png');
-    background-size: 70px;
-    padding: 10px 30px;
+    background-size: 75px;
+    padding: 30px 90px;
     background-repeat: no-repeat;
 }
 
@@ -27,6 +28,7 @@ nav ul {
     size: 24px;
     font-weight: bold;
     list-style-type: none;
+    margin: 0;
 }
 
 nav ul li {
@@ -36,16 +38,23 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #51279B;
+    transition: color 1s;
+}
+
+nav ul li a:hover {
+    color: aquamarine;
+    text-shadow: 0 0 2px black;
 }
 
 #info {
-    margin: 80px;
+    margin-left: 80px;
+    margin-top: 40px;
     color: white;
 }
 
 #info h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #info p {
@@ -59,7 +68,14 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 50px;
+    transition: color 1s;
+    transition: background-color 1s;
+}
 
+#info button:hover {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
 }
 
 .destinations-container {
@@ -72,6 +88,8 @@ nav ul li a {
 .card-image {
     max-height: 300px;
     width: 100%;
+    border-radius: 5px 5px 0 0;
+    /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
 }
 
 .hidden-info {
@@ -81,12 +99,15 @@ nav ul li a {
 .card {
     background-color: #f0f0f0;
     position: relative;
+    border: #c9c9c9 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s;
 }
 
 .social-stats {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 10px;
     font-size: 14px;
 }
 
@@ -94,6 +115,12 @@ nav ul li a {
     margin-bottom: 50px;
     font-size: 12px;
 }
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+}
+
 
 .social-stats img,
 .social-stats span {
@@ -118,4 +145,32 @@ nav ul li a {
 .card p {
     margin-top: 5px;
     margin-left: 5px;
+}
+
+footer {
+    background-color: #51279B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
 }
