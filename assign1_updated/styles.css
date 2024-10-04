@@ -2,6 +2,7 @@ body {
     /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Verdana', sans-serif;
     margin: 0;
+    background-color: rgb(189, 212, 207);
 
 }
 
@@ -10,12 +11,13 @@ header {
     background-size: cover;
     padding: 10px 20px;
     width: 100%;
+    min-height: 425px;
 }
 
 nav {
     background-image: url('images/logo.png');
     background-size: 70px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-repeat: no-repeat;
 }
 
@@ -37,7 +39,7 @@ nav ul li a {
 }
 
 #info {
-    margin: 100px;
+    margin: 80px;
     color: white;
 }
 
@@ -56,6 +58,7 @@ nav ul li a {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-bottom: 50px;
 
 }
 
@@ -67,6 +70,7 @@ nav ul li a {
 }
 
 .card-image {
+    max-height: 300px;
     width: 100%;
 }
 
@@ -75,6 +79,43 @@ nav ul li a {
 }
 
 .card {
-    border: 1px solid red;
     background-color: #f0f0f0;
+    position: relative;
+}
+
+.social-stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.card p {
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+
+.social-stats img,
+.social-stats span {
+    display: inline;
+    vertical-align: middle;
+}
+
+.social-stats img {
+    width: 14px;
+    height: 14px;
+    margin-right: 1px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.card p {
+    margin-top: 5px;
+    margin-left: 5px;
 }
